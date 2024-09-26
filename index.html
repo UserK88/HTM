@@ -4,45 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Name & Image</title>
-
-    <!-- Importing Google Font 'Roboto' -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-        font-family: "Roboto", sans-serif; /* Using the imported font */
+        background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+        font-family: "Arial", sans-serif;
       }
 
       .container {
         text-align: center;
-        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
       }
 
       h1 {
-        font-size: 2.5em; /* Increased font size */
+        font-size: 2.5em;
         color: #333;
+        margin-bottom: 20px;
+        font-family: "Courier New", Courier, monospace;
       }
 
       img {
-        width: 200px; /* Increased image size */
-        height: 200px;
-        border-radius: 50%; /* Keeps the image circular */
-        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 1.2em;
+        color: #555;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Hi, This is Kunal</h1>
+      <h1>Hi, This is Kunal!</h1>
+      <!-- Reference the image in the same folder by its filename -->
       <img src="ph1.jpg" alt="Your Image" />
+      <p>This is a short bio or description about you.</p>
     </div>
   </body>
 </html>
